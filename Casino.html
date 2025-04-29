@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozark</title>
+    <link rel="stylesheet" href="Ozark.css">
+</head>
+<body>
+    <div id="page1">
+        <div id="Welcome">
+            <h1>Welcome to The Missouri Belle Riverboat Casino</h1>
+        </div>
+        <div id="Terms">
+            <h2>Terms and Conditions</h2>
+            <h3>By entering this casino, you agree to the following terms and conditions:</h3>
+            <p><em><u>Minimum Age Requirement:</em></u> You must be at least 21 years old to enter and gamble.<br>
+                <em><u>Valid ID Check:</em></u> You must present a valid government-issued ID upon entry.<br>
+                <em><u>Appropriate Conduct:</em></u> You must behave respectfully toward staff and other patrons at all times.<br>
+                <em><u>No Cheating or Collusion:</em></u> Any attempt to cheat or manipulate games is strictly prohibited.<br>
+                <em><u>Surveillance Consent:</em></u> You agree to be monitored via CCTV throughout your time in the casino.<br>
+                <em><u>Dress Code:</em></u> You must adhere to the casino's dress code (e.g., no flip-flops or sportswear).<br>
+                <em><u>Outside Food or Drink:</em></u> Bringing outside food or beverages into the casino is not allowed.<br>
+                <em><u>Cash Handling Policy:</em></u>You agree to the casino's policies on chip purchases, payouts, and cash handling.<br>
+                <em><u>Intoxication Policy:</em></u> Visibly intoxicated individuals may be refused service or asked to leave.<br>
+                <em><u>Right to Refuse Entry:</em></u> The casino reserves the right to deny entry or eject patrons at its discretion.<br>
+                <em><u>Responsible Gambling:</em></u> You agree to gamble responsibly and seek help if you feel you have a gambling problem.<br>
+            <h3><u>Do you accept the terms written above?</u></h3>
+            <form>
+                <input type="radio" id="yes" name="accept" value="yes" required>
+                <label for="yes">Yes</label><br>
+            </form>
+        </div>
+        <div id="Client-Info" style="display: none;">
+            <h3>What will be your buy-in tonight at the Missouri Belle Riverboat Casino?</h3>
+            <form id="buyinForm">
+                <label for="buyin">Enter your buy-in amount:</label><br>
+                <input type="number" id="buyin" name="buy-in" placeholder="Enter your buy-in" min="1" max="10000"  required><br>
+                <input type="submit" id="submit" value="Submit">
+                <small id="FBI" style="color: red; display: none;">The Federal Bureau of Investigation would like to talk with you</small>
+        
+            </form>
+        </div>
+    </div>
+    <div id="page2" style="display: none;">
+        <div id="Game-Info">
+            <h1>Welcome to the Game!</h1>
+            <p>Step right up and take a spin — slot machines are the ultimate blend of chance,<br>
+            excitement, and flashing lights! With just one pull of the lever (or press of a button),<br>
+            the reels spin into a blur of symbols — cherries, sevens, bells, and stars — and in a heartbeat,<br>
+            you could hit a thrilling match that lights up the screen and rains down coins.<br>
+            Simple to play but packed with surprises like wilds, bonus rounds, and jackpots,<br>
+            slots are a fast-paced adventure where luck is king and every spin could be the one.<br>
+            Ready to try your luck? 🎰💥</p>
+            <h2>Explaining Winning Table!</h2>
+            <p>In this game there are a total of 8 icons<br>
+            (diamond, coin, clover, strawberry, star, wolf, chest, crown)<br>
+         </p>        
+            <h3>Your buy-in amount is: <span id="money"></span> €</h3>
+        </div>
+            <button id="spinButton">Spin the Reels!</button><br><br>
+
+            <img src="https://static.vecteezy.com/system/resources/previews/020/576/791/non_2x/empty-golden-slot-machine-for-online-casino-and-slots-game-png.png" alt="Slot Machine" id="slot1" width="10%" height="10%">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/576/791/non_2x/empty-golden-slot-machine-for-online-casino-and-slots-game-png.png" alt="Slot Machine" id="slot2" width="10%" height="10%">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/576/791/non_2x/empty-golden-slot-machine-for-online-casino-and-slots-game-png.png" alt="Slot Machine" id="slot3" width="10%" height="10%"><br><br>
+        </div>    
+
+    </div>
+    <div id="resultWin" style="display: none">Congratulations you won <span id="prize"></span>€! </div>
+    <div id="resultLose" style="display: none">Sorry you lost, try again</div><br><br>
+    <h2 id="spinsLeft" style="display:none">Spins left: <span id="tries"></span></h2><br><br>
+
+    <div id="endPage" style="display: none">
+    <h2>Game Over, Would You Like To Try Again?</h2><br><br>
+    <img src="https://i.imgflip.com/6k7yqc.png" width=40% height=40% alt="Game Over"><br><br>
+    <button id="restart">Try Again</button><br><br>
+    </div>
+    <footer id="footer"><p>This project is based from the Netflix series 'The Ozarks'</p></footer>
+    <script src="Ozark.js"></script>
+</body>
+</html>
