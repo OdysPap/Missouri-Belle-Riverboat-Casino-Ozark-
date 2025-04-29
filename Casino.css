@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://cdn.dribbble.com/userupload/28262570/file/original-79a084a7b489e31ad7846e6553fbf423.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 500px;
+}
+#Terms, #Client-Info{
+    padding: 20px;
+    background-color: rgba(0, 8, 124, 0.5);
+    background-blend-mode: overlay;
+    border: 2px solid #000;
+    border-radius: 10px;
+    top: 30%;
+    color: white;
+    margin-bottom: 10px;
+}
+#footer{
+    text-align: left;;
+    font-size: 12px;
+    color: #000;
+    margin-top: 75px;
+}
+#buyin{
+    width: 22%;
+}
+#slot1, #slot2, #slot3{
+    border : 2px solid #000;
+    border-radius: 10px;
+    width : 100px;
+    height : 100px;
+    object-fit: contain;
+}
+#spinsLeft{
+    border : 2px solid #000;
+    border-radius: 10px;
+    width: auto;
+    color: white;
+    background-color: black
+}
+#Game-Info{
+    border : 2px solid #000;
+    border-radius: 10px;
+    color : black;
+    background-color: rgba(139,69,19);
+}
